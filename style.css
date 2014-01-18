@@ -1,8 +1,20 @@
 
-body {
-    padding: 100px;
-    background-color: #ccc;
+/*
+    scheme : https://kuler.adobe.com/Mezzanine-color-theme-3340623/
+    #001528
+    #005259
+    #5F8A83
+    #F4E7BA
+    #D9BF98
+*/
 
+body {
+    /*padding: 100px;*/
+    background-color: #5F8A83;
+    padding: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Trebuchet MS, sans-serif;
 }
 
@@ -11,33 +23,56 @@ div {
 }
 
 header {
-    background: -webkit-radial-gradient(
-        20% 50%, farthest-corner,
+    /*background: -webkit-radial-gradient(
+        20% 0%, farthest-corner,
         rgb(255, 255, 255) 0%,
         rgb(0, 0, 0) 100%
-    );
+    );*/
+    background-color: #005259;
     padding: 20px;
     border-radius: 10px;
-    font-size: 2em;
-    text-shadow: 0 0 0.3em #FFF;
     margin-bottom: 20px;
+
+    font-size: 2.5em;
+    color: #F4E7BA;
+    text-shadow: 0 0 0.3em #333;
+    text-align: center;
 }
 
 div#search {
-    background-color: #ddd;
+    background-color: #F4E7BA;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
     #searchBox {
         box-sizing: border-box;
         width: 100%;
+        font-size: 2em;
+        background-color: #fff;
     }
 
 div#items {
-    background-color: #ddd;
+    background-color: #F4E7BA;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
     div.item {
-        border: 1px dotted #111;
+        border: 2px solid #005259;
+        border-radius: 20px;
+        margin-bottom: 5px;
     }
+    div.item:hover {
+        background-color: #005259;
+        color: white;
+    }
+
+        div.item span.price {
+            float: right;
+            color: #005259;
+            font-size: 1.5em;
+        }
+        div.item:hover span.price {
+            color: white;
+        }

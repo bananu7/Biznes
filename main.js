@@ -42,10 +42,10 @@ $(function(){
 
     // dummy items
 
-    var item = function(t,d) { addItem({title: t, description: d}); };
+    var item = function(t,d,p) { addItem({title: t, description: d, price: "$" + p}); };
 
-    item("GeForce GTX 670", "NVidia GPU");
-    item("Radeon 9700", "AMD GPU");
-    item("Core i7", "Intel CPU");
+    item("GeForce GTX 670", "NVidia GPU", 1100);
+    item("Radeon 9700", "AMD GPU", 900);
+    item("Core i7", "Intel CPU", 1400);
 
 });
