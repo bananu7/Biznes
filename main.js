@@ -79,6 +79,18 @@ $(function(){
                 scaleGridLineColor: "#F4E7BA"
             };
 
+            var parent = document.getElementById('itemDetails');
+            var canvas = document.getElementById('itemChart');
+            parent.removeChild(canvas);
+
+            canvas = document.createElement('canvas');
+            canvas.width = 300;
+            canvas.height = 300;
+            canvas.style.width = "100%";
+            canvas.style.height = "100%";
+            canvas.id = "itemChart";
+            parent.appendChild(canvas);
+
             var myLine = new Chart(document.getElementById("itemChart").getContext("2d")).Line(lineChartData, options);
         };
 
